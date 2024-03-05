@@ -1,0 +1,344 @@
+	:root{
+		--bg-art:powderblue;
+		--height:30em;
+	}
+	
+	@media (max-width: 830px) {
+		header{
+			display:none !important;
+		}
+		#myself{
+			top:0em !important;
+		}
+		section{
+			top:2em !important;
+		}
+		footer{
+			top:2em !important;
+		}
+		#button{
+			padding: 0.7rem 1rem !important;
+			font-size:calc(0.5em + 1vw) !important;
+		}
+		#over_cabecera, #cabecera{
+			height: calc(15em + 28vw) !important;
+		}
+		#p_over_cabecera{
+			width:auto !important;
+			height:100% !important;
+		}
+		#upper_part, #nottop{
+			display:flex;
+			flex-direction:column !important;
+		}
+		#name, #bank{
+			margin-right:0em !important;
+		}
+		.form{
+			font-size:calc(0.5em + 1vw) !important;
+		}
+		#la_tabla{
+			font-size:calc(0.7em + .5vw) !important;
+		}
+		.nombre{
+			width:22%;
+		}
+	}
+	@media (max-width: 1350px) {
+		/*#p_article{
+			font-size: calc(2.5em + 1.7vw) !important;
+		}*/
+		.image{
+			display:none !important;
+		}
+		.article{
+			flex-direction: column !important;
+		}
+		.intro{
+			width:100% !important;
+			opacity:0.8;
+			border-radius:0 !important;
+		}
+		.right{
+			margin:0% !important;
+		}
+		#art1{
+			background-image: url("../images/venta.png");
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-position:center;
+		}
+		#art2{
+			background-image: url("../images/alquiler.png");
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-position:center;
+		}
+		#art3{
+			background-image: url("../images/reparar.png");
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-position:center;
+		}
+	}
+	
+	*{
+		margin: 0;
+		box-sizing:border-box;
+	}
+	html,body{
+		margin: 0;
+		background-color: #0E343C;
+	}
+	main{
+		display: flex;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: start;
+	}
+	header{
+		display: flex;
+		height: 3em;
+		width: 100%;
+		background-image: linear-gradient(#594DEA, #3BD4B1);
+		position: fixed;
+		z-index: 1000;
+	}
+	a{
+		display:flex;
+		text-decoration: none;
+		color: white;
+		width: 20%;
+		justify-content: center;
+	}
+	#titulo{
+		font-size:1.3em;
+		width:35%;
+		text-align:right;
+		padding-right:10%;
+		
+	}
+	footer{
+		position: relative;
+		width: 100%;
+		top:5em;
+	}
+	section{
+		margin-bottom: 4%;
+		position: relative;
+		top: 5em;
+	}
+	img, form{
+		height: auto;
+		width: 100%;
+	}
+	nav{
+		display: flex;
+		height: 100%;
+		color: white;
+		width: 100%;
+		align-items: center;
+		font-size: 1.7em;
+		padding-left:7%;
+	}
+	#myself{
+		height: 100%;
+		top: 3em;
+		width:100%;
+		margin-bottom: 0%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	#over_cabecera{
+		display:flex;
+		position: absolute;
+		width: 100%;
+		height: calc(var(--height));
+		justify-content: center;
+		align-items: center;
+		transition: opacity .5s;
+		z-index: 10;
+		overflow:hidden;
+	}
+	#cabecera{
+		display:flex;
+		width: 90%;
+		height: calc(var(--height));
+		padding:1em;
+		color: white;
+		border-radius: 1em;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		z-index:9;
+	}
+	#myself:hover #over_cabecera{
+		opacity: 0.8;
+		z-index:1;
+	}
+	#p_over_cabecera{
+		width: 100%;
+		height: auto;
+		display: flex;
+	}
+	#p_cabecera{
+		display: flex;
+		font-size: calc(1.5em + 1.7vw);
+	}
+	#art2{
+		display:flex;
+		flex-direction:row-reverse;
+	}
+	#cuerpo{
+		display: flex;
+		height: 100%;
+		width: 100%;
+	}
+	#form{
+		width: 80%;
+		display: flex;
+		margin-left: 10%;
+		margin-right: 10%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: calc(.8em + .7vw);
+		background-color: var(--bg-art);
+		padding: 2%;
+		border-radius:1em;
+	}
+	#p_form{
+		width: 90%;
+		display: flex;
+		margin-bottom: 1em;
+		font-size: calc(.8em + 1.3vw);
+		align-items: center;
+		text-align: center;
+	}
+	#upper_part, #nottop{
+		display:flex;
+		flex-direction:row;
+		align-items:center;
+		justify-content:center;
+	}
+	#name, #bank{
+		margin-right:5.3em;
+	}
+	#defunciones{
+		display:flex;
+		width:100%;
+	}
+	#la_tabla{
+		text-align: center;
+		font-size: calc(.8em + .7vw);
+		width: 100%;
+		background-color: #49B3E6;
+	}
+	table#la_tabla, table#la_tabla td, table#la_tabla th{
+		border-collapse: collapse;
+		padding-bottom:1%;
+		padding-top:1%;
+		padding-left:2.5%;
+		padding-right:2%;
+	}
+	table#la_tabla th{
+		border-bottom: 10px solid #86FFBA;
+		font-size: calc(1em + .7vw);
+		background-color:#737BD1;
+	}
+	table#la_tabla tr:nth-child(even){
+		background-color:#A8FFB8;
+	}
+	table#la_tabla tr:hover{
+		background-color:#FA6443;
+	}
+	.intro{
+		display: flex;
+		height: auto;
+		width: 50%;
+		text-align: justify;
+		background-color: var(--bg-art);
+		border-radius:20px;
+	}
+	.right{
+		margin-left: 7%;
+	}
+	.left{
+		margin-right: 7%;
+	}
+	.p_article{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding-left: 10%;
+		padding-right: 10%;
+		font-size: calc(.7em + .9vw);
+		text-align: justify;
+	}
+	.arial{
+		font-family: arial;
+	}
+	.sans_serif{
+		font-family: sans-serif;
+	}
+	.article{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.image{
+		width: 30%;
+		align-self:center;
+	}
+	.primero{
+		margin-right: 5%;
+	}
+	.segundon{
+		margin-left: 5%;
+	}
+	.form{
+		border: none;
+		border-radius:5px;
+		margin-top:1.3em;
+		margin-bottom:1.3em;
+		background-color:#C4C4C4;
+		font-size: calc(.3em + .7vw);
+		padding-bottom:.3em;
+		padding-top:.3em;
+	}
+	.disclaimer{
+		display:block;
+		text-align: right;
+		margin-right:0.5%;
+		color:white;
+	}
+	#button{
+		background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+		border-radius: 8px;
+		border-style: none;
+		box-sizing: border-box;
+		color: #FFFFFF;
+		cursor: pointer;
+		font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+		font-size: calc(.4em + .9vw);
+		font-weight: 500;
+		padding: 1rem 1.6rem;
+		text-align: center;
+		text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+		transition: all .5s;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+	}
+
+	#button:hover {
+		box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+		transition-duration: .1s;
+	}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>arcade</title>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<main>
+	<header>
+		<nav id="encabezado">
+			<a class="sans_serif" href="#p_cabecera">Servicios</a>
+			<a class="sans_serif" href="#defunciones">Precios</a>
+			<a class="sans_serif" href="#form">Inscripción</a>
+			<p id="titulo" class="sans_serif">Arcadia</p>
+		</nav>
+	</header>
+	<section id="myself">
+		<div id="over_cabecera">
+			<img src="./images/top.jpg" id="p_over_cabecera">
+		</div>
+		<div id="cabecera">
+			<p class="arial" id="p_cabecera">Donde los videojuegos cobran vida y los problemas desaparecen</p>
+		</div>
+	</section>
+	<section id="art1" class="article">
+		<div class="intro right">
+			<p class="arial p_article"><span>Venta:</span><br><br>En nuestra tienda de videojuegos, ofrecemos una amplia variedad de títulos y consolas para que puedas disfrutar de la última tecnología en entretenimiento interactivo. Nuestro objetivo es brindarte la mejor experiencia de compra, por lo que contamos con un equipo de expertos que te asesorarán para que encuentres el juego perfecto para ti. Además, trabajamos con los principales distribuidores del mercado para garantizarte productos de calidad y a precios competitivos. Te sorprenderás con nuestra amplia selección.<br></p>
+		</div>
+		<div class="image primero">
+			<img src="./images/venta.png">
+		</div>
+	</section>
+	<section id="art2" class="article">
+		<div class="intro left">
+			<p class="arial p_article"><span>Alquiler:</span><br><br>Si estás buscando una opción más flexible, tenemos un servicio de alquiler de videojuegos para que puedas probar diferentes títulos antes de decidirte a comprarlos. Nuestra colección de juegos en alquiler abarca desde los clásicos retro hasta los lanzamientos más recientes, para que siempre encuentres algo que se ajuste a tus preferencias. Además, contamos con tarifas accesibles y planes adaptados a tus necesidades. Ven y disfruta de la experiencia de jugar los mejores videojuegos sin tener que comprometerte a comprarlos todos.<br></p>
+		</div>
+		<div class="image segundon">
+			<img src="./images/alquiler.png">
+		</div>
+	</section>
+	<section id="art3" class="article">
+		<div class="intro right">
+			<p class="arial p_article"><span>Reparación:</span><br><br>En ocasiones, nuestros equipos de videojuegos pueden presentar fallas o averías que dificultan la experiencia de juego. En nuestra tienda, contamos con un servicio de reparación especializado para solucionar cualquier problema que puedas tener con tu consola o accesorios. Nuestro equipo técnico altamente capacitado se encargará de diagnosticar y reparar tu equipo de manera rápida y eficiente, utilizando repuestos originales y brindándote garantía en todos nuestros trabajos. Confía en nosotros para mantener tus dispositivos en óptimo estado y maximizar tu disfrute de los videojuegos.<br></p>
+		</div>
+		<div class="image primero">
+			<img src="./images/reparar.png">
+		</div>
+	</section>
+	<section id="defunciones">
+		<table id="la_tabla" class="arial">
+			<thead>
+				<tr>
+					<th class="nombre">Servicio</th>
+					<th>Normal</th>
+					<th>Deluxe</th>
+					<th>Premium</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Venta</td>
+					<td>0% / Garantía 1 año</td>
+					<td>20% / Garantía 2 años</td>
+					<td>35% / Garantía 5 años</td>
+				</tr>
+				<tr>
+					<td>Alquiler</td>
+					<td>0% / Hasta 2 meses</td>
+					<td>30% / Hasta 6 meses</td>
+					<td>50% / Hasta 10 meses</td>
+				</tr>
+				<tr>
+					<td>Reparación</td>
+					<td>0% / En 80 días</td>
+					<td>15% / En 50 días</td>
+					<td>20% / En 15 días</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<section id="form" class="article">
+		<form action="" method="post" class="arial">
+			<div id="p_form">
+				<p>Formulario de Inscripción</p>
+			</div>
+			<div id="upper_part">
+				<div>
+					<label for="name">Nombre:</label>
+					<input class="form" type="text" id="name" name="user_name" placeholder="Introduzca su nombre" maxlength="15">
+				</div>
+				<div>
+					<label for="apellido">Apellidos:</label>
+					<input class="form" type="text" id="apellido" name="user_name2" placeholder="Introduzca sus apellidos" maxlength="20">
+				</div>
+			</div>
+			<div id="nottop">
+				<div>
+					<label for="bank">Contraseña:</label>
+					<input class="form" type="text" id="bank" name="user_bank" placeholder="****" maxlength="20">
+				</div>
+				<div>
+					<label for="mail">Correo electrónico:</label>
+					<input class="form" type="email" id="mail" name="user_mail" placeholder="fulano@gmail.com" maxlength="40">
+				</div>
+			</div>
+			<div>
+					<button id="button" type="reset" onclick="javascript:alert('Su mensaje ha sido enviado correctamente\nGracias por su confianza en nosotros')">Enviar</button>
+			</div>
+			</ul>
+		</form>
+	</section>
+	
+	<footer>
+		<p class="disclaimer arial">Obviamente esta tienda es ficticia. No intenten reservar ni comprar nada y si tantas ganas tienen de hacerlo, probablemente ya les han estafado antes. Me reservo el derecho a reírme en la cara de aquel que se crea esto.</p>
+	</footer>
+</main>
+</body>
+</html>
